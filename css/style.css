@@ -174,7 +174,6 @@ body{
   border: 2px solid white;
   border-radius: 44px;
   padding: 10px;
-  width: fit-content;
   height: fit-content; 
 }
 .containerFlex{
@@ -224,11 +223,25 @@ body{
 .subtitleTech{
   text-align: center;
   color: white;
-  font-size: 150%;
+  font-size: 200%;
   font-family: "Open Sans", sans-serif;
 }
+
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  gap: 5px;
+}
+
 .listOfThingsmked{}
   @media screen and (max-width: 500px) {
+    .cardContainer{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 160px);
+      gap: 10px;
+      justify-content: center;
+    }
+    
     .timeWorking{
       color: white;
       text-align: center;
@@ -324,7 +337,6 @@ body{
       border: 2px solid white;
       border-radius: 44px;
       padding: 10px;
-      width: fit-content;
       height: fit-content; 
       font-size: 100%;
     }
