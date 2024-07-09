@@ -203,6 +203,9 @@ body{
 .timeWorking{
   color: white;
   text-align: center;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 110%;
 }
 .text_contact{
   color:white;
@@ -250,7 +253,7 @@ body{
     .titleWorkArticle {
       color: white;
       font-family: "Open Sans", sans-serif;
-      font-size: 100%;
+      font-size: 120%;
     }
     .header a {
       float: none;
