@@ -267,12 +267,34 @@ body{
   gap: 10px;
   justify-content: center;
 }
+.languagebulet{
+  color: white;
+  border: 2px solid white;
+  border-radius: 44px;
+  padding: 10px;
+  height: fit-content; 
+  width: fit-content; 
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+}
 
   @media screen and (max-width: 500px) {
+    .languagebulet{
+      color: white;
+      border: 2px solid white;
+      border-radius: 44px;
+      padding: 10px;
+      height: fit-content; 
+      width: fit-content; 
+      font-weight: 800;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 70%;
+    }
     .container {
       display: flex;
       gap: 10px;
     }
+
     .title_section{
       color: gray;
       font-family: "Open Sans", sans-serif;
