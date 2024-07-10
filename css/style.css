@@ -202,7 +202,7 @@ body{
 }
 
 .textExpiriencekArticle{
-  color: white;
+  color: whites;
   font-size: 120%;
   font-family: "Open Sans", sans-serif;
 }
@@ -277,7 +277,13 @@ body{
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
 }
-
+.clickable-section {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Maintain the same text color */
+}
+.clickable-section:hover {
+  cursor: pointer; /* Change cursor on hover */
+}
   @media screen and (max-width: 500px) {
     .languagebulet{
       color: white;
