@@ -294,7 +294,7 @@ body{
       width: fit-content; 
       font-weight: 800;
       font-family: 'Open Sans', sans-serif;
-      font-size: 70%;
+      font-size: 55%;
     }
     .container {
       display: flex;
@@ -328,7 +328,7 @@ body{
     }
     .cardContainerLanguage {
       display: grid;
-      grid-template-columns: repeat(auto-fit, 159px);
+      grid-template-columns: repeat(auto-fit, 119px);
       gap: 10px;
       justify-content: center;
     }
