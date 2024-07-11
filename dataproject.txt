@@ -1,0 +1,30 @@
+  <div class="container">
+            <article class="article_a_work element">
+                <h3 class="titleWorkArticle">Here for You</h3>
+                <p class="textWrokArticle">Protect War 3D est un jeu de tower defense innovant qui vous met au défi de protéger votre château en faisant évoluer votre armement à travers différents niveaux de technologie</p>
+                <div class="technologies_section cardContainer">
+                    <div><div class="elementFlex"><img src="./img//flutter_icon.png" style="width: 58px;" class="tech_logo"></div></div>
+                    <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                    <div><div class="elementFlex "><img src="./img/ios-2_icon.webp" class="tech_logo" style="width: 100px;"></div></div>
+                </div>
+            </article>
+            <article style="align-content: center;">   
+                <img src="./img/fleshe.svg" class="fleshe"/>
+            </article>
+        </div>
+
+         <hr class="dividerArticleWork">
+        <div class="container">
+            <article class="article_a_work element">
+                <h3 class="titleWorkArticle">MrsWriter</h3>
+                <p class="textWrokArticle">Application pour écrire des livres avec l'asistance de l'IA.</p>
+                <div class="technologies_section cardContainer">
+                    <div><div class="elementFlex"><img src="./img//flutter_icon.png" style="width: 58px;" class="tech_logo"></div></div>
+                    <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                    <div><div class="elementFlex "><img src="./img/ios-2_icon.webp" class="tech_logo" style="width: 100px;"></div></div>
+                </div>
+            </article>
+            <article style="align-content: center;">   
+                <img src="./img/fleshe.svg" class="fleshe"/>
+            </article>
+        </div>

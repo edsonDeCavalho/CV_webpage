@@ -168,8 +168,8 @@ body{
 }
 .dividerArticleWork{
   width: 100%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .technologies_section{
   align-items: center;
@@ -215,7 +215,7 @@ body{
 }
 .text_contact{
   color:white;
-  
+  font-family: "Open Sans", sans-serif;
 }
 .back_green{
   background-color: green;
@@ -291,7 +291,17 @@ body{
   color: white;
   margin-top: -5px;
 }
+.text{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 120%;
+}
   @media screen and (max-width: 500px) {
+    .text{
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 100%;
+    }
     .languagebulet{
       color: white;
       border: 2px solid white;
@@ -496,10 +506,7 @@ body{
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
 }
-.text{
-  color: white;
-  font-family: "Open Sans", sans-serif;
-}
+
 
 
 .image_aboutme{
