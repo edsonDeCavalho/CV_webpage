@@ -168,8 +168,8 @@ body{
 }
 .dividerArticleWork{
   width: 100%;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .technologies_section{
   align-items: center;
@@ -237,7 +237,20 @@ body{
   font-family: "Open Sans", sans-serif;
 }
 
-
+.buttoncv{
+  background-color: white;
+  height: 20%;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
 .imageschool{
   width: 76%;
   text-align: center;
@@ -461,6 +474,21 @@ body{
       height: fit-content; 
       font-size: 90%;
 
+    }
+    .buttoncv{
+      background-color: white;
+      height: 20%;
+      border: none;
+      color: black;
+      padding: 10px 27px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 40px;
+      font-size: 70%;
     }
   }
 
