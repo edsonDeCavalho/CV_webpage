@@ -200,9 +200,13 @@ body{
   margin-right: auto;
   border-radius: 20px;
 }
-
+.remarque{
+  color: orangered;
+  font-weight: 800;
+  font-size: 100%;
+}
 .textExpiriencekArticle{
-  color: whites;
+  color: white;
   font-size: 120%;
   font-family: "Open Sans", sans-serif;
 }
