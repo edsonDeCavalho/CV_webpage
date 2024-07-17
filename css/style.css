@@ -313,6 +313,9 @@ body{
   font-family: "Open Sans", sans-serif;
   font-size: 120%;
 }
+.tech_logo2{
+  width: 258px;
+}
   @media screen and (max-width: 500px) {
     .text{
       color: white;
@@ -332,6 +335,9 @@ body{
     }
     .tech_logo{
       width: 52px;
+    }
+    .tech_logo2{
+      width: 107px;
     }
     .subtitle_tech_logo{
       color: white;
