@@ -1,8 +1,27 @@
 *{
-    background-color: black;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+.day-mode {
+  background-color: white;
+  color: black;
+}
+
+.night-mode {
+  background-color: black;
+  color: white;
+}
+
+.day-mode {
+  color: black;
+}
+
+.night-mode {
+  color: white;
 }
 
 body{
+  background-color: black;
   width: 970px;
   margin: auto;
   padding: 30px;
@@ -13,14 +32,12 @@ body{
 }
 .salutations{
     font-family: "Open Sans", sans-serif;
-    color: white;
     font-size: 400%;
     margin-bottom: 0px;
 }
 
 .salutations_soutitle{
     font-family: "Open Sans", sans-serif;
-    color: gainsboro;
     font-size: 150%;
 }
 
@@ -142,7 +159,6 @@ body{
 }
 
 .title_works{
-  color: white;
   font-size: 400%;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 5%;
@@ -152,16 +168,13 @@ body{
   padding: 4px;
 }
 .textWrokArticle{
-  color: white;
   font-family: "Open Sans", sans-serif;
 }
 .titleWorkArticle{
-  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 150%;
 }
 .titleDiplomaArticle{
-  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 130%;
   margin-bottom: -21px;
@@ -206,19 +219,16 @@ body{
   font-size: 100%;
 }
 .textExpiriencekArticle{
-  color: white;
   font-size: 120%;
   font-family: "Open Sans", sans-serif;
 }
 .timeWorking{
-  color: white;
   text-align: center;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   font-size: 110%;
 }
 .text_contact{
-  color:white;
   font-family: "Open Sans", sans-serif;
 }
 .back_green{
@@ -242,10 +252,8 @@ body{
 }
 
 .buttoncv{
-  background-color: white;
   height: 20%;
   border: none;
-  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -254,6 +262,17 @@ body{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 40px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.day-mode .buttoncv {
+  background-color: lightgray;
+  color: black;
+}
+
+.night-mode .buttoncv {
+  background-color: white;
+  color: black;
 }
 .imageschool{
   width: 76%;
@@ -264,7 +283,6 @@ body{
   border-radius: 20px;
 }
 .title_section{
-  color: gray;
   font-family: "Open Sans", sans-serif;
   font-size: xx-large;
 }
@@ -285,7 +303,24 @@ body{
   justify-content: center;
 }
 .languagebulet{
-  color: white;
+  border: 2px solid white;
+  border-radius: 44px;
+  padding: 10px;
+  height: fit-content; 
+  width: fit-content; 
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+}
+.day-mode .languagebulet{
+  border: 2px solid black;
+  border-radius: 44px;
+  padding: 10px;
+  height: fit-content; 
+  width: fit-content; 
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+}
+.night-mode .languagebulet{
   border: 2px solid white;
   border-radius: 44px;
   padding: 10px;
@@ -309,7 +344,6 @@ body{
   margin-top: -5px;
 }
 .text{
-  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 120%;
 }
@@ -349,12 +383,10 @@ body{
     }
 
     .title_section{
-      color: gray;
       font-family: "Open Sans", sans-serif;
       font-size: x-large;
     }
     .textExpiriencekArticle{
-      color: cornflowerblue;
       font-size: 85%;
       font-family: "Open Sans", sans-serif;
     }
@@ -381,16 +413,13 @@ body{
     }
     
     .timeWorking{
-      color: white;
       text-align: center;
     }
     .titleWorkArticle {
-      color: white;
       font-family: "Open Sans", sans-serif;
-      font-size: 90%;
+      font-size: 70%;
     }
     .titleDiplomaArticle{
-      color: white;
       font-family: "Open Sans", sans-serif;
       font-size: 90%;
       margin-bottom: 0;
@@ -411,7 +440,6 @@ body{
     }
     .salutations{
         font-family: "Open Sans", sans-serif;
-        color: white;
         font-size: 150%;
         margin-bottom: 0px;
     }
@@ -425,7 +453,6 @@ body{
     }
     .salutations_soutitle{
         font-family: "Open Sans", sans-serif;
-        color: gainsboro;
         font-size: 90%;
     }
 
@@ -561,5 +588,5 @@ body{
 }
 
 .title_works{
-  color: white;
+  
 }
