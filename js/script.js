@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update image to night mode
         document.getElementById("modeToggle").src = "./img/lightMode.svg";
+        document.getElementById("logoed").src = "./img/logonight.png";
         document.getElementById("modeToggle").alt = "Switch to Day Mode";  // Optionally update the alt text
 
         // Change all elements with class "day-mode" to "night-mode"
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update image to day mode
         document.getElementById("modeToggle").src = "./img/daymode_light.svg";
+        document.getElementById("logoed").src = "./img/logoday.png";
         document.getElementById("modeToggle").alt = "Switch to Night Mode";  // Optionally update the alt text
 
         // Change all elements with class "night-mode" to "day-mode"
@@ -54,5 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Initialize with day mode
-    switchToDayMode();
+    switchToNightMode();
 });
