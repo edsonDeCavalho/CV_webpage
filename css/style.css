@@ -10,6 +10,7 @@
 .night-mode {
   background-color: black;
   color: white;
+  fill: white;
 }
 
 .day-mode {
@@ -336,7 +337,7 @@ body{
   cursor: pointer; /* Change cursor on hover */
 }
 .tech_logo{
-  width: 62px;
+  width: 42px;
 }
 .subtitle_tech_logo{
   color: white;
@@ -349,7 +350,18 @@ body{
 .tech_logo2{
   width: 258px;
 }
+.flipevent{
+  display: block;
+}
+
   @media screen and (max-width: 500px) {
+    .textWrokArticle{
+      font-family: "Open Sans", sans-serif;
+      font-size: 80%;
+    }
+    .flipevent{
+      display: none;
+    }
     .text{
       font-family: "Open Sans", sans-serif;
       font-size: 101%;
@@ -399,7 +411,6 @@ body{
       display: grid;
       grid-template-columns: repeat(auto-fit, 130px);
       gap: 10px;
-      justify-content: center;
     }
     .cardContainerLanguage {
       display: grid;
@@ -413,7 +424,7 @@ body{
     }
     .titleWorkArticle {
       font-family: "Open Sans", sans-serif;
-      font-size: 70%;
+      font-size: 120%;
     }
     .titleDiplomaArticle{
       font-family: "Open Sans", sans-serif;
