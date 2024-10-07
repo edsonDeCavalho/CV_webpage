@@ -1,0 +1,19 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M51 118.5V55H117M51 181.75V245H117M241 118.5V55H179M241 181.75V245H179" stroke="#0075FF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25 150H275" stroke="#0075FF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M91.5 77H76.5C75.1193 77 74 78.1193 74 79.5V94.5C74 95.8807 75.1193 97 76.5 97H91.5C92.8807 97 94 95.8807 94 94.5V79.5C94 78.1193 92.8807 77 91.5 77Z" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M91.5 107H76.5C75.1193 107 74 108.119 74 109.5V124.5C74 125.881 75.1193 127 76.5 127H91.5C92.8807 127 94 125.881 94 124.5V109.5C94 108.119 92.8807 107 91.5 107Z" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M121.5 77H106.5C105.119 77 104 78.1193 104 79.5V94.5C104 95.8807 105.119 97 106.5 97H121.5C122.881 97 124 95.8807 124 94.5V79.5C124 78.1193 122.881 77 121.5 77Z" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104 107V117" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104 127H114V107" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M114 112H124" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M124 122V127" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M207.5 174H220V186.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M172.5 224H160V211.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M220 211.5V224H207.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M160 186.5V174H172.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175 186.5V211.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 186.5V211.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M195 186.5V211.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 186.5V211.5" stroke="#0075FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

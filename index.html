@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/fire_1f525.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>DE CARVALHO Edson</title>
 </head>
@@ -123,67 +126,296 @@
     </div>
     <hr class="dividerArticleWork">
     <div class="section_works">
-        <h2 class="title_works" >Experience</h2> 
+        <h2 class="title_works">Experience</h2>
         <hr class="dividerArticleWork">
-        <a href="https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/lagence-du-numerique-des-forces-de-securite" class="clickable-section" target="_blank">
+        
+        <!-- First Work Experience -->
+        <a href="#" class="clickable-section" id="modalTrigger1">
             <div class="container">
-                <article style="width: 20%;align-content: center;">
-                    <img src="./img/anfsi.jpg" class="imageschool"/>
+                <article style="width: 20%; align-content: center;">
+                    <img src="./img/anfsi.jpg" class="imageschool" />
                 </article>
                 <article class="article_a_work element">
                     <h3 class="night-mode titleWorkArticle">French Ministry of the Interior</h3>
                     <p class="night-mode textExpiriencekArticle">Android developer</p>
-                    <div class="technologies_section containerFlex">
-                    </div>
                 </article>
-                <article style="align-content: center;">   
-                    <p class="timeWorking">2022 - 2024</p> 
-                    <p class="night-mode timeWorking">(2 years)</p> 
+                <article style="align-content: center;">
+                    <p class="timeWorking">2022 - 2024</p>
+                    <p class="night-mode timeWorking">(2 years)</p>
                 </article>
             </div>
         </a>
+        
+        <!-- Modal Structure for French Ministry -->
+        <div id="missionModal1" class="modal">
+            <div class="night-mode modal-content">
+                <span class="close" id="close1">&times;</span>
+                <h2>List of missions at French Ministry of the Interior</h2>
+                <ul>
+                    <li class="mission-item">
+                        <i class="fas fa-mobile-alt"></i> <!-- Font Awesome icon for mobile -->
+                        Development of an Android inventory application for scanning QR Codes and barcodes.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-car"></i> <!-- Font Awesome icon for traffic control -->
+                        Creation of an Android application for traffic control.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-shield-alt"></i> <!-- Font Awesome icon for safety -->
+                        Development of an Android application for monitoring vehicles transporting hazardous materials.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-code-branch"></i> <!-- Font Awesome icon for development -->
+                        Design of a modular full-stack web environment with Ktor and Single-Spa, creating a robust ecosystem for increased modularity and effective management of web services.
+                    </li>      
+                    <li class="mission-item">
+                        <i class="fas fa-plug"></i> <!-- Font Awesome icon for integration -->
+                        Integration of new applications into existing systems.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-cogs"></i> <!-- Font Awesome icon for CI/CD -->
+                        Implementation of CI/CD pipelines for automated code deployment.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-code"></i> <!-- Font Awesome icon for development -->
+                        Development using Jetpack Compose for modern Android UI design.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-tasks"></i> <!-- Font Awesome icon for project management -->
+                        Utilization of Jira and Confluence for effective project management and collaboration.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-file-alt"></i> <!-- Font Awesome icon for documentation -->
+                        Writing and editing project specifications to ensure clarity and precision.
+                    </li>              
+                </ul>
+            </div>
+        </div>
+        
+        <script>
+            // First Modal Logic
+            var modal1 = document.getElementById("missionModal1");
+            var trigger1 = document.getElementById("modalTrigger1");
+            var closeBtn1 = document.getElementById("close1");
+    
+            trigger1.onclick = function(event) {
+                event.preventDefault();
+                modal1.style.display = "block";
+            }
+    
+            closeBtn1.onclick = function() {
+                modal1.style.display = "none";
+            }
+    
+            window.onclick = function(event) {
+                if (event.target == modal1) {
+                    modal1.style.display = "none";
+                }
+            }
+        </script>
+    
         <hr class="dividerArticleWork">
-        <a href="https://immveo.fr/" class="clickable-section" target="_blank">
+    
+        <!-- Second Work Experience -->
+        <a href="#" class="clickable-section" id="modalTrigger2">
             <div class="container">
-                <article style="width: 20%;align-content: center;">
-                    <img src="./img/immveo.jpg" class="imageschool"/>
+                <article style="width: 20%; align-content: center;">
+                    <img src="./img/immveo.jpg" class="imageschool" />
                 </article>
                 <article class="article_a_work element">
-                    <h3 class="night-mode  titleWorkArticle">IMMVEO</h3>
-                    <p class="night-mode  textExpiriencekArticle">Web Developer</p>
-                    <div class="technologies_section containerFlex">
-                    </div>
+                    <h3 class="night-mode titleWorkArticle">IMMVEO</h3>
+                    <p class="night-mode textExpiriencekArticle">Web Developer</p>
                 </article>
-                <article style="align-content: center;">   
+                <article style="align-content: center;">
                     <p class="night-mode timeWorking">2021 - 2022</p>
-                    <p class="night-mode timeWorking">(1 year)</p> 
+                    <p class="night-mode timeWorking">(1 year)</p>
                 </article>
             </div>
         </a>
+        
+        <!-- Modal Structure for IMMVEO -->
+        <div id="missionModal2" class="modal">
+            <div class="modal-content night-mode">
+                <span class="close" id="close2">&times;</span>
+                <h2>List of Missions at IMMVEO</h2>
+                <ul>
+                    <li class="mission-item">
+                        <i class="fas fa-users-cog"></i> <!-- Font Awesome icon for team management -->
+                        Management of a team consisting of two developers.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-building"></i> <!-- Font Awesome icon for real estate -->
+                        Development and maintenance of a platform for real estate investors.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-pencil-alt"></i> <!-- Font Awesome icon for signatures -->
+                        Development of an electronic signature system in compliance with the eIDAS regulation.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-calculator"></i> <!-- Font Awesome icon for calculators -->
+                        Design and development of real estate investment simulators in JavaScript.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-desktop"></i> <!-- Font Awesome icon for web -->
+                        Development of responsive web applications using modern front-end frameworks.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-plug"></i> <!-- Font Awesome icon for APIs -->
+                        Implementation of RESTful APIs for seamless data exchange.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-users"></i> <!-- Font Awesome icon for collaboration -->
+                        Collaboration with designers to enhance user experience and interface.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-tachometer-alt"></i> <!-- Font Awesome icon for optimization -->
+                        Optimization of web applications for speed and scalability.
+                    </li>
+                    <li class="mission-item">
+                        <i class="fas fa-cogs"></i> <!-- Font Awesome icon for integration -->
+                        Integration of third-party services to improve functionality.
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <script>
+            // Second Modal Logic
+            var modal2 = document.getElementById("missionModal2");
+            var trigger2 = document.getElementById("modalTrigger2");
+            var closeBtn2 = document.getElementById("close2");
+    
+            trigger2.onclick = function(event) {
+                event.preventDefault();
+                modal2.style.display = "block";
+            }
+    
+            closeBtn2.onclick = function() {
+                modal2.style.display = "none";
+            }
+    
+            window.onclick = function(event) {
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
+            }
+        </script>
+    </div>
         <hr class="dividerArticleWork">
-        <a href="https://www.kiatoo.com/" class="clickable-section" target="_blank">
-            <div class="container">
-                <article style="width: 20%;align-content: center;">
-                    <img src="./img/kiatoo.png" class="imageschool"/>
-                </article>
-                <article class="article_a_work element">
-                    <h3 class="titleWorkArticle">Kiatoo</h3>
-                    <p class="textExpiriencekArticle">Mobile developer IOS/Android</p>
-                    <div class="technologies_section containerFlex">
-                    </div>
-                </article>
-                <article style="align-content: center;">   
-                    <p class="timeWorking">2018 - 2021</p>
-                    <p class="night-mode timeWorking">3 years</p> 
-                </article>
-            </div>
-        </a>
+        <!-- Kiatoo Work Experience -->
+    <a href="#" class="clickable-section" id="modalTriggerKiatoo">
+        <div class="container">
+            <article style="width: 20%; align-content: center;">
+                <img src="./img/kiatoo.png" class="imageschool" />
+            </article>
+            <article class="article_a_work element">
+                <h3 class="titleWorkArticle">Kiatoo</h3>
+                <p class="textExpiriencekArticle">Mobile Developer iOS/Android</p>
+            </article>
+            <article style="align-content: center;">   
+                <p class="timeWorking">2018 - 2021</p>
+                <p class="night-mode timeWorking">3 years</p> 
+            </article>
+        </div>
+    </a>
+    
+    <!-- Modal Structure for Kiatoo -->
+    <div id="missionModalKiatoo" class="modal">
+        <div class="modal-content night-mode">
+            <span class="close" id="closeKiatoo">&times;</span>
+            <h2>List of Missions at Kiatoo</h2>
+            <ul class="mission-list">
+                <li class="mission-item ">
+                    <i class="fas fa-code"></i> <!-- Font Awesome icon for code -->
+                    Development of mobile applications for iOS and Android platforms.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-users"></i> <!-- Font Awesome icon for collaboration -->
+                    Collaboration with design teams to enhance user experience.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-plug"></i> <!-- Font Awesome icon for APIs -->
+                    Implementation of RESTful APIs for seamless data integration.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-tachometer-alt"></i> <!-- Font Awesome icon for optimization -->
+                    Optimization of mobile applications for performance and scalability.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-user-check"></i> <!-- Font Awesome icon for mentoring -->
+                    Conducting code reviews and mentoring junior developers.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-mobile-alt"></i> <!-- Font Awesome icon for mobile -->
+                    Design and development of responsive user interfaces for mobile applications.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-bug"></i> <!-- Font Awesome icon for debugging -->
+                    Troubleshooting and debugging applications to ensure optimal functionality.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-lock"></i> <!-- Font Awesome icon for security -->
+                    Implementing security measures to protect user data and privacy.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-cloud-upload-alt"></i> <!-- Font Awesome icon for cloud -->
+                    Integrating cloud services for data storage and real-time synchronization.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-chart-line"></i> <!-- Font Awesome icon for analytics -->
+                    Analyzing app performance metrics and user feedback for improvements.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-sync"></i> <!-- Font Awesome icon for updates -->
+                    Updating and maintaining existing mobile applications to add new features and fix bugs.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-file-code"></i> <!-- Font Awesome icon for documentation -->
+                    Writing technical documentation and user guides for mobile applications.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-comments"></i> <!-- Font Awesome icon for communication -->
+                    Collaborating with product managers and stakeholders to define app requirements.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-thumbs-up"></i> <!-- Font Awesome icon for user feedback -->
+                    Conducting user testing sessions to gather feedback and improve user experience.
+                </li>
+                <li class="mission-item">
+                    <i class="fas fa-chart-pie"></i> <!-- Font Awesome icon for statistics -->
+                    Researching and implementing new technologies and frameworks in mobile development.
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Kiatoo Modal Logic
+        var modalKiatoo = document.getElementById("missionModalKiatoo");
+        var triggerKiatoo = document.getElementById("modalTriggerKiatoo");
+        var closeBtnKiatoo = document.getElementById("closeKiatoo");
+
+        triggerKiatoo.onclick = function(event) {
+            event.preventDefault();
+            modalKiatoo.style.display = "block";
+        }
+
+        closeBtnKiatoo.onclick = function() {
+            modalKiatoo.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modalKiatoo) {
+                modalKiatoo.style.display = "none";
+            }
+        }
+    </script>
         <hr class="dividerArticleWork">
     </div>
     <div class="section_works">
-        <h2 class="title_works day-mode">Works</h2> 
-        <hr class="dividerArticleWork">
-        <h3 class="subtitleTech day-mode">Mobile</h3>
+        <h2 class="title_works day-mode">Professional works</h2> 
         <hr class="dividerArticleWork">
         <a href="https://apps.apple.com/fr/app/mrswriter-for-writers/id6654914317" class="clickable-section" target="_blank">
             <div class="container">
@@ -192,12 +424,11 @@
                 </article>
                 <article class="article_a_work element">
                     <h3 class="night-mode  titleWorkArticle">MrsWriter for writers</h3>
-                    <p class="textWrokArticle">Unleash your creativity with MrsWriter! Write, organize, and export multiple books with ease. Free, user-friendly, and local storage. Start your writing journey today!<br>(Avaliable in AppleStore)</p>
+                    <p class="textWrokArticle">MrsWriter, a user-friendly iOS application for authors to write, organize, and export multiple books. Features include a clean, distraction-free interface, seamless chapter organization, and local export (.txt format) with secure offline storage. The app is free, designed for ease of use, and is available on the Apple App Store</p>
                     <div class="technologies_section cardContainer">
                     <div class="technologies_section containerFlex">
                         <div><div class="elementFlex"><img src="./img/appleIocon5.png" class="tech_logo"></div></div>
                         <div><div class="elementFlex"><img src="./img/App_Store_icon.svg.png" class="tech_logo" ></div></div>
-                      
                     </div>
                 </article>
                 <article class="flipevent" style="align-content: center;">   
@@ -205,6 +436,104 @@
                 </article>
             </div>
         </a>
+        <hr class="dividerArticleWork">
+        <a class="clickable-section" target="_blank">
+            <div class="container">
+                <article style="width: 20%;align-content: center;">
+                    <img src="./img/Icone.png" class="imageschool"/>
+                </article>
+                <article class="article_a_work element">
+                    <h3 class="night-mode  titleWorkArticle">Régime de circulation</h3>
+                    <p class="textWrokArticle">Régime de circulation is an Android application that gathers a set of information related to the freedom of movement. It is used as an informational support tool to conduct traffic checks and is published on the F-Droid app store, making it available to officers of the National Gendarmerie and the National Police.</p>
+                    <div class="technologies_section cardContainer">
+                    <div class="technologies_section containerFlex">
+                        <div><div class="elementFlex"><img src="./img//android_logo_green.png" class="tech_logo"></div></div>
+                        <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
+                        <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide" ></div></div>
+                    </div>
+                </article>
+                <article style="align-content: center;">   
+                    
+                    <img src="./img/fleshe.svg" class="flipevent"/>
+                </article>
+            </div>
+        </a>
+        <hr class="dividerArticleWork">
+        <a class="clickable-section" target="_blank">
+            <div class="container">
+                <article style="width: 20%;align-content: center;">
+                    <img src="./img/logo_douchette.png" class="imageschool"/>
+                </article>
+                <article class="article_a_work element">
+                    <h3 class="night-mode  titleWorkArticle">Neo Scan</h3>
+                    <p class="textWrokArticle">NeoScan, an Android application that scans various barcode types, catalogs them in a list, and enables sharing via the Ministry's internal system or email. Designed for field use, it streamlines barcode inventory management. Available on F-Droid for the National Gendarmerie and National Police agents.</p>
+                    <div class="technologies_section cardContainer">
+                        <div class="technologies_section containerFlex">
+                            <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                            
+                            <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide" ></div></div>
+                        </div>
+                </article>
+                <article style="align-content: center;">         
+                    <img src="./img/fleshe.svg" class="flipevent"/>
+                </article>
+            </div>
+        </a>
+        <hr class="dividerArticleWork">
+        <a class="clickable-section" target="_blank">
+        <div class="container">
+            <div class="container">
+                <article style="width: 22%;align-content: center;margin-left: -1%;">
+                    <img src="./img/logo_tmd.png" class="imageschool"/>
+                </article>
+                <article class="article_a_work element">
+                    <h3 class="night-mode  titleWorkArticle">Transport de matieres dangereuses</h3>
+                    <p class="textWrokArticle">Developed an Android app for inspecting vehicles transporting hazardous materials. The app allows officers to efficiently record and verify safety compliance in real-time during inspections. Published on F-Droid, it is available for use by National Gendarmerie and National Police agents to enhance safety monitoring in the field.</p>
+                    <div class="technologies_section cardContainer">
+                    <div class="technologies_section containerFlex">
+                        <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                        <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
+                        <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide" ></div></div>
+                        <div><div class="elementFlex"><img src="./img/logo_java.png" class="tech_logo_java hide" ></div></div>
+                    </div>
+                </article>
+                <article style="align-content: center;">   
+                    
+                    <img src="./img/fleshe.svg" class="flipevent"/>
+                </article>
+            </div>
+        </div>
+        </a>
+        <hr class="dividerArticleWork">
+        <a class="clickable-section" target="_blank">
+            <div class="container">
+                <div class="container">
+                    <article style="width: 20%;align-content: center;">
+                        <img src="./img/logo_kmp.png" class="imageschool"/>
+                    </article>
+                    <article class="article_a_work element">
+                        <h3 class="night-mode  titleWorkArticle">Kotlin multiplateform</h3>
+                        <p class="textWrokArticle">Developed the Kotli Multiplatform project, establishing a shared codebase for iOS, Android, and Desktop applications using Kotlin Multiplatform (KMP). The project includes a Room database implementation for all platforms, enabling seamless data storage and management across devices. It also incorporates a PDF reader, navigation handling, and RESTful API calls for dynamic data interaction. This project provides a solid foundation for building cross-platform applications with consistent functionality and performance across mobile and desktop environments. </p>
+                        <div class="technologies_section cardContainer">
+                        <div class="technologies_section containerFlex">
+                            <div><div class="elementFlex"><img src="./img//kmp.png" style="width: 150px;" class="tech_logo2"></div></div>
+                            <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_java.png " class="tech_logo_java hide" ></div></div>
+                            
+                        </div>
+                    </article>
+                    <article style="align-content: center;">   
+                        <img src="./img/fleshe.svg" class="flipevent"/>
+                    </article>
+                </div>
+            </div>
+            </a>
+            <hr class="dividerArticleWork">
+    </div>
+    <div class="section_works">
+        <h2 class="title_works day-mode">Personal works</h2> 
+    
         <hr class="dividerArticleWork">
         <a href="https://github.com/edsonDeCavalho/kotlin-android-FilmsMania"  class="clickable-section" target="_blank">
             <div class="container">
@@ -217,6 +546,7 @@
                     <div class="technologies_section cardContainer">
                     <div class="technologies_section containerFlex">
                         <div><div class="elementFlex"><img src="./img//android_logo_green.png" class="tech_logo"></div></div>
+                        <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
                     </div>
                 </article>
                 <article style="align-content: center;">   
@@ -233,10 +563,11 @@
                 </article>
                 <article class="article_a_work element">
                     <h3 class="night-mode  titleWorkArticle">Protect War 3D</h3>
-                    <p class="textWrokArticle">Protect War 3D is an innovative tower defense game that challenges you to protect your castle by evolving your weaponry through different levels of technology.<br>(Avaliable in PlayStore)</p>
+                    <p class="textWrokArticle">Protect War 3D is an Android applicatio, innovative tower defense game that challenges you to protect your castle by evolving your weaponry through different levels of technology.<br>(Avaliable in PlayStore)</p>
                     <div class="technologies_section cardContainer">
                         <div class="technologies_section containerFlex">
                             <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo hide"></div></div>
                             <div><div class="elementFlex"><img src="./img/playstore.png" class="tech_logo" ></div></div>
                         </div>
                 </article>
@@ -254,7 +585,7 @@
                 </article>
                 <article class="article_a_work element">
                     <h3 class="night-mode  titleWorkArticle">Here For you</h3>
-                    <p class="textWrokArticle">Here for You is a powerful mobile application designed to assist survivors of domestic violence in their journey towards safety and support.</p>
+                    <p class="textWrokArticle">Here for You is a powerful cross paleteform mobile application (IOS,Android,Web) designed to assist survivors of domestic violence in their journey towards safety and support.</p>
                     <div class="technologies_section cardContainer">
                     <div class="technologies_section containerFlex">
                         <div><div class="elementFlex"><img src="./img//flutter_icon.png" class="tech_logo"></div></div>
@@ -276,7 +607,7 @@
                     </article>
                     <article class="article_a_work element">
                         <h3 class="night-mode  titleWorkArticle">CrazyQuiz</h3>
-                        <p class="textWrokArticle">Protect War 3D is an innovative tower defense game that challenges you to protect your castle by evolving your weaponry through different levels of technology. </p>
+                        <p class="textWrokArticle">CrazyQuiz it'a a cross-platform Flutter application for iOS, Android, and Web that allows users to take quizzes using data fetched from an API. </p>
                         <div class="technologies_section cardContainer">
                         <div class="technologies_section containerFlex">
                             <div><div class="elementFlex"><img src="./img//flutter_icon.png"  class="tech_logo"></div></div>
@@ -288,21 +619,6 @@
                 </div>
             </div>
             </a>
-            <hr class="dividerArticleWork">
-        <a href="https://github.com/edsonDeCavalho/Demo_KMP_Room_database"  target="_blank">
-        <div class="container">
-            <article class="article_a_work element">
-                <h3 class="night-mode titleWorkArticle">Kotlin Multi Plateform (Room DataBase and Navigation)</h3>
-                <p class="night-mode textWrokArticle">kmp_database is a Kotlin Multiplatform project designed to work seamlessly on iOS, Desktop, and Android platforms. This base project utilizes the Room library for efficient database management and offers a robust starting point for developers looking to implement cross-platform database functionalities. </p>
-                <div class="technologies_section cardContainer">
-                    <div><div class="elementFlex"><img src="./img//kmp.png" style="width: 150px;" class="tech_logo2"></div></div>
-                </div>
-            </article>
-            <article style="align-content: center;">   
-                <img src="./img/fleshe.svg" class="flipevent"/>
-            </article>
-        </div>
-        </a>
         <hr class="dividerArticleWork">
     </div>
     <footer>
