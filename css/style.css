@@ -702,3 +702,13 @@ body{
   font-size: 20px; /* Increase icon size */
 }
 
+.image-container {
+  display: flex;
+  justify-content: space-around; /* Align images side by side */
+  margin-top: 20px; /* Space above the images */
+}
+
+.modal-image {
+  width: 30%; /* Set width to adjust how much space images take */
+  height: auto; /* Maintain aspect ratio */
+}

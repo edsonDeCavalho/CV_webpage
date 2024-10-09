@@ -437,74 +437,221 @@
             </div>
         </a>
         <hr class="dividerArticleWork">
-        <a class="clickable-section" target="_blank">
+        <a class="clickable-section" id="modalTriggerRégimeDeCirculation">
             <div class="container">
-                <article style="width: 20%;align-content: center;">
-                    <img src="./img/Icone.png" class="imageschool"/>
+                <article style="width: 20%; align-content: center;">
+                    <img src="./img/Icone.png" class="imageschool" />
                 </article>
                 <article class="article_a_work element">
-                    <h3 class="night-mode  titleWorkArticle">Régime de circulation</h3>
+                    <h3 class="night-mode titleWorkArticle">Régime de circulation</h3>
                     <p class="textWrokArticle">Régime de circulation is an Android application that gathers a set of information related to the freedom of movement. It is used as an informational support tool to conduct traffic checks and is published on the F-Droid app store, making it available to officers of the National Gendarmerie and the National Police.</p>
                     <div class="technologies_section cardContainer">
-                    <div class="technologies_section containerFlex">
-                        <div><div class="elementFlex"><img src="./img//android_logo_green.png" class="tech_logo"></div></div>
-                        <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
-                        <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide" ></div></div>
+                        <div class="technologies_section containerFlex">
+                            <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_kotlin.png" class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide"></div></div>
+                        </div>
                     </div>
                 </article>
-                <article style="align-content: center;">   
-                    
-                    <img src="./img/fleshe.svg" class="flipevent"/>
+                <article style="align-content: center;">
+                    <img src="./img/fleshe.svg" class="flipevent" />
                 </article>
             </div>
         </a>
+             <!-- Modal Structure -->
+        <div id="regimeModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeRegimeModal">&times;</span>
+                <h2>Régime de circulation</h2>
+                <p>This application supports traffic checks for the National Gendarmerie and Police.</p>
+                <div class="image-container">
+                    <img src="./img/rdc1.png" class="modal-image" alt="Image 1" />
+                    <img src="./img/rdc2.png" class="modal-image" alt="Image 2" />
+                    <img src="./img/rdc3.png" class="modal-image" alt="Image 3" />
+                </div>
+                <div class="image-container">
+                    <img src="./img/rdc4.png" class="modal-image" alt="Image 1" />
+                    <img src="./img/rdc5.png" class="modal-image" alt="Image 2" />
+                    <img src="./img/rdc6.png" class="modal-image" alt="Image 3" />
+                </div>
+                <div class="image-container">
+                    <img src="./img/rdc7.png" class="modal-image" alt="Image 1" />
+                    <img src="./img/rdc8.png" class="modal-image" alt="Image 2" />
+                </div>
+            </div>
+        </div>
+        <script>
+            // Get the modal
+            var regimeModal = document.getElementById("regimeModal");
+
+            // Get the button that opens the modal
+            var triggerRegime = document.getElementById("modalTriggerRégimeDeCirculation");
+
+            // Get the <span> element that closes the modal
+            var closeRegimeModal = document.getElementById("closeRegimeModal");
+
+            // When the user clicks the link, open the modal
+            triggerRegime.onclick = function(event) {
+                event.preventDefault(); // Prevent default anchor click behavior
+                regimeModal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            closeRegimeModal.onclick = function() {
+                regimeModal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == regimeModal) {
+                    regimeModal.style.display = "none";
+                }
+            }
+
+        </script>
         <hr class="dividerArticleWork">
-        <a class="clickable-section" target="_blank">
+        <!-- Clickable Section -->
+        <a class="clickable-section" id="modalTriggerNeoScan">
             <div class="container">
-                <article style="width: 20%;align-content: center;">
-                    <img src="./img/logo_douchette.png" class="imageschool"/>
+                <article style="width: 20%; align-content: center;">
+                    <img src="./img/logo_douchette.png" class="imageschool" />
                 </article>
                 <article class="article_a_work element">
-                    <h3 class="night-mode  titleWorkArticle">Neo Scan</h3>
+                    <h3 class="night-mode titleWorkArticle">Neo Scan</h3>
                     <p class="textWrokArticle">NeoScan, an Android application that scans various barcode types, catalogs them in a list, and enables sharing via the Ministry's internal system or email. Designed for field use, it streamlines barcode inventory management. Available on F-Droid for the National Gendarmerie and National Police agents.</p>
                     <div class="technologies_section cardContainer">
                         <div class="technologies_section containerFlex">
                             <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
-                            
-                            <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
-                            <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide" ></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_kotlin.png" class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo"></div></div>
                         </div>
-                </article>
-                <article style="align-content: center;">         
-                    <img src="./img/fleshe.svg" class="flipevent"/>
-                </article>
-            </div>
-        </a>
-        <hr class="dividerArticleWork">
-        <a class="clickable-section" target="_blank">
-        <div class="container">
-            <div class="container">
-                <article style="width: 22%;align-content: center;margin-left: -1%;">
-                    <img src="./img/logo_tmd.png" class="imageschool"/>
-                </article>
-                <article class="article_a_work element">
-                    <h3 class="night-mode  titleWorkArticle">Transport de matieres dangereuses</h3>
-                    <p class="textWrokArticle">Developed an Android app for inspecting vehicles transporting hazardous materials. The app allows officers to efficiently record and verify safety compliance in real-time during inspections. Published on F-Droid, it is available for use by National Gendarmerie and National Police agents to enhance safety monitoring in the field.</p>
-                    <div class="technologies_section cardContainer">
-                    <div class="technologies_section containerFlex">
-                        <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
-                        <div><div class="elementFlex"><img src="./img//logo_kotlin.png"  class="tech_logo"></div></div>
-                        <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo hide" ></div></div>
-                        <div><div class="elementFlex"><img src="./img/logo_java.png" class="tech_logo_java hide" ></div></div>
                     </div>
                 </article>
-                <article style="align-content: center;">   
-                    
-                    <img src="./img/fleshe.svg" class="flipevent"/>
+                <article style="align-content: center;">
+                    <img src="./img/fleshe.svg" class="flipevent" />
                 </article>
             </div>
-        </div>
         </a>
+
+        <!-- Modal Structure -->
+        <div id="neoScanModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeNeoScanModal">&times;</span>
+                <h2>Neo Scan</h2>
+                <p>NeoScan allows barcode inventory management and sharing within the Ministry. Below are some features:</p>
+                <div class="image-container">
+                        <img src="./img/neo1.png" class="modal-image" alt="Scan Feature" />
+                        <img src="./img/neo2.png" class="modal-image" alt="List Catalog" />
+                        <img src="./img/neo3.png" class="modal-image" alt="Sharing" />
+                </div>
+            </div>
+        </div>
+        <script>
+            // Get the modal
+            var neoScanModal = document.getElementById("neoScanModal");
+
+            // Get the button that opens the modal
+            var triggerNeoScan = document.getElementById("modalTriggerNeoScan");
+
+            // Get the <span> element that closes the modal
+            var closeNeoScanModal = document.getElementById("closeNeoScanModal");
+
+            // When the user clicks the link, open the modal
+            triggerNeoScan.onclick = function(event) {
+                event.preventDefault(); // Prevent default anchor click behavior
+                neoScanModal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            closeNeoScanModal.onclick = function() {
+                neoScanModal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == neoScanModal) {
+                    neoScanModal.style.display = "none";
+                }
+            }
+
+        </script>
+        <hr class="dividerArticleWork">
+        <a class="clickable-section" target="_blank">
+        <!-- Clickable Section -->
+<a class="clickable-section" id="modalTriggerTMD">
+    <div class="container">
+        <article style="width: 22%; align-content: center; margin-left: -1%;">
+            <img src="./img/logo_tmd.png" class="imageschool" />
+        </article>
+        <article class="article_a_work element">
+            <h3 class="night-mode titleWorkArticle">Transport de matières dangereuses</h3>
+            <p class="textWrokArticle">Developed an Android app for inspecting vehicles transporting hazardous materials. The app allows officers to efficiently record and verify safety compliance in real-time during inspections. Published on F-Droid, it is available for use by National Gendarmerie and National Police agents to enhance safety monitoring in the field.</p>
+            <div class="technologies_section cardContainer">
+                <div class="technologies_section containerFlex">
+                    <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                    <div><div class="elementFlex"><img src="./img/logo_kotlin.png" class="tech_logo"></div></div>
+                    <div><div class="elementFlex"><img src="./img/logo_fdroid.svg.png" class="tech_logo"></div></div>
+                    <div><div class="elementFlex"><img src="./img/logo_java.png" class="tech_logo_java"></div></div>
+                </div>
+            </div>
+        </article>
+        <article style="align-content: center;">
+            <img src="./img/fleshe.svg" class="flipevent" />
+        </article>
+    </div>
+</a>
+
+<!-- Modal Structure -->
+<div id="tmdModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeTMDModal">&times;</span>
+        <h2>Transport de matières dangereuses</h2>
+        <p>This Android app assists officers in inspecting hazardous materials transport vehicles. Below are some key features:</p>
+        <div class="image-container">
+            <img src="./img/tm1.png" class="modal-image" alt="Inspection Process" />    
+            <img src="./img/tm2.png" class="modal-image" alt="Inspection Process" />  
+            <img src="./img/tm3.png" class="modal-image" alt="Inspection Process" />  
+        </div>
+        <div class="image-container">
+            <img src="./img/tm4.png" class="modal-image" alt="Inspection Process" />  
+            <img src="./img/tm5.png" class="modal-image" alt="Inspection Process" />  
+            <img src="./img/tm6.png" class="modal-image" alt="Inspection Process" />  
+        </div>    
+        <div class="image-container">
+            <img src="./img/tm7.png" class="modal-image" alt="Inspection Process" />   
+        </div>
+        
+    </div>
+</div>
+<script>
+    // Get the modal
+var tmdModal = document.getElementById("tmdModal");
+
+// Get the button that opens the modal
+var triggerTMD = document.getElementById("modalTriggerTMD");
+
+// Get the <span> element that closes the modal
+var closeTMDModal = document.getElementById("closeTMDModal");
+
+// When the user clicks the link, open the modal
+triggerTMD.onclick = function(event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+    tmdModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeTMDModal.onclick = function() {
+    tmdModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == tmdModal) {
+        tmdModal.style.display = "none";
+    }
+}
+
+</script>
         <hr class="dividerArticleWork">
         <a class="clickable-section" target="_blank">
             <div class="container">
