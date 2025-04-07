@@ -128,7 +128,21 @@
     <div class="section_works">
         <h2 class="title_works">Experience</h2>
         <hr class="dividerArticleWork">
-        
+        <a href="#" class="clickable-section" id="modalTrigger1">
+            <div class="container">
+                <article style="width: 20%; align-content: center;">
+                    <img src="./img/anfsi.jpg" class="imageschool" />
+                </article>
+                <article class="article_a_work element">
+                    <h3 class="night-mode titleWorkArticle">ASCESI</h3>
+                    <p class="night-mode textExpiriencekArticle">Android developer</p>
+                </article>
+                <article style="align-content: center;">
+                    <p class="timeWorking">2024 - 2025</p>
+                    <p class="night-mode timeWorking">(4 months)</p>
+                </article>
+            </div>
+        </a>
         <!-- First Work Experience -->
         <a href="#" class="clickable-section" id="modalTrigger1">
             <div class="container">
@@ -390,7 +404,7 @@
             </ul>
         </div>
     </div>
-    
+
     <script>
         // Kiatoo Modal Logic
         var modalKiatoo = document.getElementById("missionModalKiatoo");
@@ -401,11 +415,9 @@
             event.preventDefault();
             modalKiatoo.style.display = "block";
         }
-
         closeBtnKiatoo.onclick = function() {
             modalKiatoo.style.display = "none";
         }
-
         window.onclick = function(event) {
             if (event.target == modalKiatoo) {
                 modalKiatoo.style.display = "none";
