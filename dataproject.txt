@@ -12,7 +12,6 @@
                 <img src="./img/fleshe.svg" class="fleshe"/>
             </article>
         </div>
-
          <hr class="dividerArticleWork">
         <div class="container">
             <article class="article_a_work element">
