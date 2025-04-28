@@ -431,6 +431,87 @@
         <h2 class="title_works day-mode">Professional works</h2> 
         <h2 class="title_works day-mode">Mobile</h2> 
         <hr class="dividerArticleWork">
+        <a href="https://apps.apple.com/fr/app/mrswriter-for-writers/id6654914317" class="clickable-section" id="modalproxiModal" target="_blank">
+            <div class="container">
+                <article style="width: 20%;align-content: center;">
+                    <img src="./img/proxiserve.webp" class="imageschool"/>
+                </article>
+                <article class="article_a_work element">
+                    <h3 class="night-mode  titleWorkArticle">Proxiserve App</h3>
+
+                    <p class="textWrokArticle">
+                        Designed for over 2,000 field technicians, this application is used to record information related to completed interventions.
+                    </p>
+                    <p class="textWrokArticle">It includes several features such as:</p>
+                    <ul class="textWrokArticle">
+                        <li>Photo capture</li>
+                        <li>QR code scanning</li>
+                        <li>Internal messaging</li>
+                        <li>API integration</li>
+                        <li>Offline mode</li>
+                        <li>PDF document generation and sharing</li>
+                        <li>WebView support</li>
+                        <li>User login and management</li>
+                    </ul>
+                    <div class="technologies_section cardContainer">
+                    <div class="technologies_section containerFlex">
+                        <div><div class="elementFlex"><img src="./img/android_logo_green.png" class="tech_logo"></div></div>
+                            <div><div class="elementFlex"><img src="./img/logo_kotlin.png" class="tech_logo"></div></div>
+                    </div>
+                </article>
+                <article class="flipevent" style="align-content: center;">   
+                    <img src="./img/fleshe.svg" class="flipevent"/>
+                </article>
+            </div>
+        </a>
+
+              <!-- Modal Structure -->
+              <div id="proxiModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeproxiModal">&times;</span>
+                    <h2>Proxiserve</h2>
+                    <p>Designed for over 2,000 field technicians, this application is used to record information related to completed interventions..</p>
+                    <div class="image-container">
+                        <img src="./img/proxiserve/APPAREILS.png" class="modal-image" alt="Image 1" />
+                        <img src="./img/proxiserve/ECRAN_ACCUEIL.png" class="modal-image" alt="Image 2" />
+                        <img src="./img/proxiserve/HISTORIQUE_VIDE.png" class="modal-image" alt="Image 3" />
+                    </div>
+                    <div class="image-container">
+                        <img src="./img/proxiserve/INTERVENTIONN_CALENDRIER.png" class="modal-image" alt="Image 3" />
+                        <img src="./img/proxiserve/PIECES_UTILISEES.png" class="modal-image" alt="Image 3" />
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Get the modal
+                var proxiModal = document.getElementById("proxiModal");
+    
+                // Get the button that opens the modal
+                var triggerRegime = document.getElementById("modalproxiModal");
+    
+                // Get the <span> element that closes the modal
+                var closeproxiModal = document.getElementById("closeproxiModal");
+    
+                // When the user clicks the link, open the modal
+                triggerRegime.onclick = function(event) {
+                    event.preventDefault(); // Prevent default anchor click behavior
+                    proxiModal.style.display = "block";
+                }
+    
+                // When the user clicks on <span> (x), close the modal
+                    closeproxiModal.onclick = function() {
+                        proxiModal.style.display = "none";
+                }
+    
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == proxiModal) {
+                        proxiModal.style.display = "none";
+                    }
+                }
+    
+            </script>
+        <hr class="dividerArticleWork">
         <a href="https://apps.apple.com/fr/app/mrswriter-for-writers/id6654914317" class="clickable-section" target="_blank">
             <div class="container">
                 <article style="width: 20%;align-content: center;">
