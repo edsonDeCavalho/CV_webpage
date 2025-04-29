@@ -712,3 +712,155 @@ body{
   width: 30%; /* Set width to adjust how much space images take */
   height: auto; /* Maintain aspect ratio */
 }
+
+/* Contact Modal Styles */
+.contact-modal {
+    max-width: 600px;
+    padding: 40px;
+    text-align: left;
+    background-color: white !important;
+    border-radius: 20px;
+}
+
+.contact-modal h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-subtitle {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.checkbox-group label {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.privacy-link {
+    color: #666;
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+.remind-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: #666;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remind-btn:hover {
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    color: #666;
+    background: #eee;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 500px) {
+    .contact-modal {
+        padding: 20px;
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .contact-modal h2 {
+        font-size: 2em;
+    }
+
+    .contact-subtitle {
+        font-size: 1em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+}
