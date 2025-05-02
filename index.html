@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <!-- Calendly link widget end -->
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -884,7 +887,24 @@ window.onclick = function(event) {
     </footer>
     <script src="./js/script.js"></script>
 
-    <!-- Contact Modal -->
+    <!-- Contact Choice Modal -->
+    <div id="contactChoiceModal" class="modal">
+      <div class="modal-content contact-choice-modal">
+        <span class="close" id="closeContactChoice">&times;</span>
+        <div class="choice-icons">
+          <div class="choice-item" id="chooseMessage">
+            <i class="fas fa-envelope fa-4x"></i>
+            <div class="choice-label">Message</div>
+          </div>
+          <div class="choice-item" id="chooseMeeting">
+            <i class="fas fa-video fa-4x"></i>
+            <div class="choice-label">Meeting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal (Message) -->
     <div id="contactModal" class="modal">
         <div class="night-mode modal-content contact-modal">
             <span class="close" id="closeContact">&times;</span>
@@ -892,7 +912,6 @@ window.onclick = function(event) {
             <p class="contact-subtitle">
                 Vous pouvez me laisser un message ici. Je vous répondrai personnellement dès que possible.
             </p>
-
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
                     <input type="email" id="email" placeholder="Votre mail" required>
@@ -905,41 +924,80 @@ window.onclick = function(event) {
                 </div>
                 <div class="form-group checkbox-group">
                     <input type="checkbox" id="privacy" required>
-                    <label for="privacy">I confirm that I've read and agree to <a href="#" class="privacy-link">Privacy Policy</a>.</label>
+                    <label for="privacy">Je confirme avoir lu et accepté la <a href="#" class="privacy-link">Politique de confidentialité</a>.</label>
                 </div>
-                <button type="submit" class="submit-btn">Submit</button>
-                <button type="button" class="remind-btn">Remind me later</button>
+                <button type="submit" class="submit-btn">Envoyer</button>
+                <button type="button" class="remind-btn">Me rappeler plus tard</button>
             </form>
         </div>
     </div>
 
+    <!-- Calendly Modal (Meeting) -->
+    <div id="calendlyModal" class="modal">
+      <div class="modal-content calendly-modal-content">
+        <span class="close" id="closeCalendly">&times;</span>
+        <div id="calendlyWidgetContainer">
+          <!-- Calendly inline widget will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Calendly script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
     <script>
-        // Contact Modal Logic
-        var contactModal = document.getElementById("contactModal");
-        var contactBtn = document.getElementById("contactBtn");
-        var closeContact = document.getElementById("closeContact");
-        var contactForm = document.getElementById("contactForm");
+    // Show the choice modal when Contact is clicked
+    var contactBtn = document.getElementById("contactBtn");
+    var contactChoiceModal = document.getElementById("contactChoiceModal");
+    var closeContactChoice = document.getElementById("closeContactChoice");
+    var contactModal = document.getElementById("contactModal");
+    var closeContact = document.getElementById("closeContact");
+    var calendlyModal = document.getElementById("calendlyModal");
+    var closeCalendly = document.getElementById("closeCalendly");
+    var chooseMessage = document.getElementById("chooseMessage");
+    var chooseMeeting = document.getElementById("chooseMeeting");
+    var calendlyWidgetContainer = document.getElementById("calendlyWidgetContainer");
 
-        contactBtn.onclick = function() {
-            contactModal.style.display = "block";
+    contactBtn.onclick = function() {
+        contactChoiceModal.style.display = "block";
+    }
+    closeContactChoice.onclick = function() {
+        contactChoiceModal.style.display = "none";
+    }
+    chooseMessage.onclick = function() {
+        contactChoiceModal.style.display = "none";
+        contactModal.style.display = "block";
+    }
+    chooseMeeting.onclick = function() {
+        contactChoiceModal.style.display = "none";
+        if (window.Calendly && typeof Calendly.initPopupWidget === 'function') {
+            Calendly.initPopupWidget({url: 'https://calendly.com/edson_carvalho/30min'});
+        } else {
+            alert('Calendly is still loading. Please try again in a moment.');
         }
-
-        closeContact.onclick = function() {
-            contactModal.style.display = "none";
+    }
+    closeContact.onclick = function() {
+        contactModal.style.display = "none";
+    }
+    closeCalendly.onclick = function() {
+        calendlyModal.style.display = "none";
+        calendlyWidgetContainer.innerHTML = '';
+    }
+    window.onclick = function(event) {
+        if (event.target == contactChoiceModal) contactChoiceModal.style.display = "none";
+        if (event.target == contactModal) contactModal.style.display = "none";
+        if (event.target == calendlyModal) {
+          calendlyModal.style.display = "none";
+          calendlyWidgetContainer.innerHTML = '';
         }
-
-        window.onclick = function(event) {
-            if (event.target == contactModal) {
-                contactModal.style.display = "none";
-            }
-        }
-
-        contactForm.onsubmit = function(e) {
-            e.preventDefault();
-            // Handle form submission here
-            alert('Thank you for your message! We will get back to you soon.');
-            contactModal.style.display = "none";
-        }
+    }
+    // Contact form submit
+    var contactForm = document.getElementById("contactForm");
+    contactForm.onsubmit = function(e) {
+        e.preventDefault();
+        alert('Merci pour votre message ! Je vous répondrai bientôt.');
+        contactModal.style.display = "none";
+    }
     </script>
 </body>
 </html>
