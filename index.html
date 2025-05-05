@@ -892,10 +892,10 @@ window.onclick = function(event) {
       <div class="modal-content contact-choice-modal">
         <span class="close" id="closeContactChoice">&times;</span>
         <div class="choice-icons">
-          <div class="choice-item" id="chooseMessage">
+          <a href="https://airtable.com/embed/appk7mWfl9VjoIKQ3/pagufpRmTBhKNvTZ2/form" target="_blank" class="choice-item" id="chooseMessage">
             <i class="fas fa-envelope fa-4x"></i>
             <div class="choice-label">Message</div>
-          </div>
+          </a>
           <div class="choice-item" id="chooseMeeting">
             <i class="fas fa-video fa-4x"></i>
             <div class="choice-label">Meeting</div>
@@ -948,10 +948,6 @@ window.onclick = function(event) {
     closeContactChoice.onclick = function() {
         contactChoiceModal.style.display = "none";
     }
-    chooseMessage.onclick = function() {
-        contactChoiceModal.style.display = "none";
-        contactModal.style.display = "block";
-    }
     chooseMeeting.onclick = function() {
         contactChoiceModal.style.display = "none";
         if (window.Calendly && typeof Calendly.initPopupWidget === 'function') {
@@ -974,13 +970,6 @@ window.onclick = function(event) {
           calendlyModal.style.display = "none";
           calendlyWidgetContainer.innerHTML = '';
         }
-    }
-    // Contact form submit
-    var contactForm = document.getElementById("contactForm");
-    contactForm.onsubmit = function(e) {
-        e.preventDefault();
-        alert('Merci pour votre message ! Je vous répondrai bientôt.');
-        contactModal.style.display = "none";
     }
     </script>
 </body>
